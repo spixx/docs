@@ -22,10 +22,11 @@ the full disk with LVM. All partitions are ext4.
     /var/log        - 1GB - Logfiles
     /var/log/audit  - 512M - Audit logfile
     /boot           - 512M - Boot files
+    /home           - 1GB - Home with user files
     swap            - 1GB - Swap file
 
 Extra partition for a database will be pushed onto a secondary volumegroup
-vg1 instead of the OS volume group vg0
+vg1 instead of the OS volume group vg0.
 
 ## Applications ##
 salt-minion
