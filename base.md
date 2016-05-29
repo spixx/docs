@@ -1,7 +1,5 @@
-`
-version   :   1.0.0
-status    :   production
-`
+    version   :   1.0.0
+    status    :   production
 
 # Base #
 
