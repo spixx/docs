@@ -1,4 +1,8 @@
-# Base
+## document
+# version   :   1.0.0
+# status    :   production
+## document
+
 ## Information
 Base install aims to be a complete, secure and slimlined Operating System
 that uses a well-known Linux distrobution as the foundation. CentOS 6.X 
