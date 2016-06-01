@@ -7,7 +7,9 @@
 Base install aims to be a complete, secure and slimlined Operating System
 that uses a well-known Linux distrobution as the foundation. CentOS 6.X 
 fullfills all the demands and is also widely used due to those facts, but
-to further develop the concept some changes has been made.
+to further develop the concept some changes has been made. To support newer
+and a more wide range of packages CentOS 7.X is also used with the same
+parameters as the above.
 
 ## Partitions ##
 The parition scheme is based upon security guides provided by the community
