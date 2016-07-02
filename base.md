@@ -42,6 +42,7 @@ is split into two partitions one for the /boot partition and the second for
 the full disk with LVM. All partitions are ext4.
 
 VG0 sda
+
     /               - 1GB  - Root partition
     /tmp            - 1GB  - Temporary files
     /usr            - 4GB  - Binary and library
@@ -53,10 +54,12 @@ VG0 sda
     swap            - 1GB  - Swap file
     
 VG1 sdb (example)
+
     /var/lib/mysql  - 1TB  - Database files
     /srv/nfs/share1 - 1TB  - NFS share
     
-VG2 sdc (example
+VG2 sdc (example)
+
     /srv/nfs/share2 - 1TB  - Another NFS share
 
 When the role of the server then demands extra storage (database/web) a second
