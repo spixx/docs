@@ -32,9 +32,8 @@ Extra partition for a database will be pushed onto a secondary volumegroup
 vg1 instead of the OS volume group vg0.
 
 ## Installation ##
-Primaryily we need to download a image file and create a boot medium either
-physical or logical depending on what we are installing on. Independent on 
-the way in which we actually makes the server boot the medium, let us begin.
+First of all we need to download a ISO file. I usually go for a favorite: 
+[hh](http://mirror.hh.se) but you should choose a mirror that is closer to you.
 
 ### Pre installation ###
 
