@@ -29,6 +29,7 @@ wildcard physical machine follow these rules:
 
  * At least 2 harddrives
  * Use RAID to create 2 logical volumes
+ * Always use RAID (fake-raid/software if you lack a RAID card)
 
 So if the above is true we will create a logical RAID volume with 10GiB of 
 storage space and let the other logical volume be the second drive where all
@@ -40,6 +41,7 @@ and to secure against local filesystem vurnerabilities. Each physical disk
 is split into two partitions one for the /boot partition and the second for
 the full disk with LVM. All partitions are ext4.
 
+VG0 sda
     /               - 1GB  - Root partition
     /tmp            - 1GB  - Temporary files
     /usr            - 4GB  - Binary and library
@@ -49,11 +51,26 @@ the full disk with LVM. All partitions are ext4.
     /boot           - 512M - Boot files
     /home           - 1GB  - Home with user files
     swap            - 1GB  - Swap file
+    
+VG1 sdb (example)
+    /var/lib/mysql  - 1TB  - Database files
+    /srv/nfs/share1 - 1TB  - NFS share
+    
+VG2 sdc (example
+    /srv/nfs/share2 - 1TB  - Another NFS share
 
 When the role of the server then demands extra storage (database/web) a second
 harddrive is added. Instead of cluttering the system with partitioned drives
 there will be two drives (sda and sdb). Where sdb will not contain any MBR/GPT
-tables but instead it will be a physical volume.
+tables but instead it will be a physical volume. 
+
+One thought here is that if this is for instance a NFS server where we know 
+that data volumes will be above 2TiB it is sugested that you splice the data
+over more then one extra harddrive. This is both true for virtual and physical
+enviornments since moving a harddrive of +2TiB is really time consuming.
+
+There is no magical one-fits-all solutions, if you are going to be using 200TiB
+NFS server then you might need to think a bit extra ;).
 
 ### Filesystem ###
 
