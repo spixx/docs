@@ -1,5 +1,6 @@
     version   :   1.0.0
     status    :   production
+    system    :   CentOS 7.x
 
 # Base #
 
@@ -30,7 +31,10 @@ the full disk with LVM. All partitions are ext4.
 Extra partition for a database will be pushed onto a secondary volumegroup
 vg1 instead of the OS volume group vg0.
 
-## Applications ##
-
-
 ## Installation ##
+Primaryily we need to download a image file and create a boot medium either
+physical or logical depending on what we are installing on. Independent on 
+the way in which we actually makes the server boot the medium, let us begin.
+
+### Pre installation ###
+
