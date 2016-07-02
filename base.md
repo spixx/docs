@@ -31,4 +31,6 @@ Extra partition for a database will be pushed onto a secondary volumegroup
 vg1 instead of the OS volume group vg0.
 
 ## Applications ##
-tree
+
+
+## Installation ##
