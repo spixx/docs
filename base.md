@@ -76,7 +76,11 @@ There is no magical one-fits-all solutions, if you are going to be using 200TiB
 NFS server then you might need to think a bit extra ;).
 
 ### Filesystem ###
-A good rule to keep to
+Usually there is a good reason to use for instance /opt, in the documentation
+here we always use /usr/local. This will contain anything local and unique to 
+the server. Above all else try and keep to normal shares otherwise, adding 
+complexity will not make normal system tasks easy on the administrators. Also
+always keep to the thing you decide upon.
 
 ### Applications ###
 
