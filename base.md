@@ -6,7 +6,7 @@
 
 ## Information ##
 Base install aims to be a complete, secure and slimlined Operating System
-that uses a well-known Linux distrobution as the foundation. CentOS 6.X 
+that uses a well-known Linux distribution as the foundation. CentOS 6.X 
 fullfills all the demands and is also widely used due to those facts, but
 to further develop the concept some changes has been made. To support newer
 and a more wide range of packages CentOS 7.X is also used with the same
@@ -76,6 +76,7 @@ There is no magical one-fits-all solutions, if you are going to be using 200TiB
 NFS server then you might need to think a bit extra ;).
 
 ### Filesystem ###
+A good rule to keep to
 
 ### Applications ###
 
