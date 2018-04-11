@@ -1,0 +1,9 @@
+# Atom
+## Packages
+ o file-icons
+ o fonts
+ o git-plus
+
+## Themes
+ o city-lights-syntax
+ o city-lights-ui

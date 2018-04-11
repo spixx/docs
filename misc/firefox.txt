@@ -1,0 +1,36 @@
+# Firefox
+## Links
+https://www.privacytools.io/
+
+## Addons
+ o Bitwarden
+ o Cookie AutoDelete
+ o Decentraleyes
+ o Ghostery
+ o HTTPS Everywhere
+ o NoScript
+
+## Change settings 
+ o media.peerconnection.turn.disable = true
+ o media.peerconnection.use_document_iceservers = false
+ o media.peerconnection.video.enabled = false
+ o media.peerconnection.identity.timeout = 1
+
+## Change settings
+ o privacy.firstparty.isolate = true
+ o privacy.resistFingerprinting = true
+ o privacy.trackingprotection.enabled = true
+ o browser.cache.offline.enable = false
+ o browser.send_pings = false
+ o browser.sessionstore.max_tabs_undo = 0
+ o browser.urlbar.speculativeConnect.enabled = false
+ o dom.battery.enabled = false
+ o dom.event.clipboardevents.enabled = false
+ o geo.enabled = false
+ o media.navigator.enabled = false
+ o network.cookie.cookieBehavior = 1
+ o network.cookie.lifetimePolicy = 2
+ o network.http.referer.trimmingPolicy = 2
+ o network.http.referer.XOriginPolicy = 2
+ o network.http.referer.XOriginTrimmingPolicy = 2
+ o webgl.disabled = true
